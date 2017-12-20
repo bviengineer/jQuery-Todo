@@ -16,3 +16,7 @@ $("input[type='text']").keypress(function(event){
         $("ul").append("<li><span><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></span> " + todoItem + "</li>");
     }
 });
+
+$(".fa-list-ul").click(function(){
+    $("input[type=\"text\"]").fadeToggle();
+});
