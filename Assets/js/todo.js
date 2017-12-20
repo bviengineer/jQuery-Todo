@@ -13,6 +13,6 @@ $("input[type='text']").keypress(function(event){
     if(event.which === 13){
         var todoItem = $(this).val();
         $(this).val("");
-        $("ul").append("<li><span>X </span>" + todoItem + "</li>");
+        $("ul").append("<li><span><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></span> " + todoItem + "</li>");
     }
 });
